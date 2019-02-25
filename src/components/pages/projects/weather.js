@@ -10,6 +10,9 @@ class Weather extends Component {
     city: undefined,
     country: undefined,
     temperature: undefined,
+    description: undefined,
+    humidity: undefined,
+    pressure: undefined,
     error: undefined  
   }
 
@@ -29,6 +32,9 @@ class Weather extends Component {
       city: data.name,
       country: data.sys.country,
       temperature: data.main.temp,
+      description: data.weather[0].description,
+      humidity: data.main.humidity,
+      pressure: data.main.pressure,
       error: ""
     });
    } else {
@@ -36,6 +42,9 @@ class Weather extends Component {
       city: undefined,
       country: undefined,
       temperature: undefined,
+      description: undefined,
+      humidity: undefined,
+      pressure: undefined,
       error: "Enter a city."
 
     });
@@ -48,8 +57,11 @@ class Weather extends Component {
            <WeatherForm getWeather={this.getWeather}
             city={this.state.city}
             country={this.state.country}
-           temperature={this.state.temperature}
-           error={this.state.error}
+            temperature={this.state.temperature}
+            description={this.state.description}
+            humidity={this.state.humidity}
+            pressure={this.state.pressure}
+            error={this.state.error}
            />
            
         </div>

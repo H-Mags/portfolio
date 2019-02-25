@@ -93,6 +93,12 @@ header {
 
 }
 
+.mainhr {
+    width: 50%;
+    border: 1.5px solid map-get($Colors, accent);
+    border-radius: 5px;
+}
+
 .formInput{
     border: 1px solid $black;
     border-radius: 5px;
@@ -120,3 +126,22 @@ header {
     }
 }
 
+.redtext {
+    color: red;
+}
+
+table {
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+
+   td {
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    }
+}
+
+footer {
+    text-align: center;
+}

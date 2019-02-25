@@ -7,7 +7,7 @@ class Projects extends Component {
 
   render() {
     return (
-        <div>
+        <div className = "container-fluid">
           <Weather />
           <div>
             More coming soon.

@@ -51,7 +51,8 @@ class Header extends Component {
               <li className="last">
               <Link to="/contact">Contact</Link>
               </li>
-          </ul>  
+          </ul>
+          <hr className="mainhr"></hr>  
         </nav>
         <div className="dropdown" style = {{background:""}} >
         <div className = "button" onClick={this.showDropdownMenu}>
@@ -67,13 +68,15 @@ class Header extends Component {
             )
             }
         </div>
+    
         </div>
 
         
       
         
-
+      
       </header>
+      
     );
   }
 }

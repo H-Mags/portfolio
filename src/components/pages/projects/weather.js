@@ -12,7 +12,7 @@ class Weather extends Component {
     temperature: undefined,
     description: undefined,
     humidity: undefined,
-    pressure: undefined,
+    wind: undefined,
     error: undefined  
   }
 
@@ -34,7 +34,7 @@ class Weather extends Component {
       temperature: data.main.temp,
       description: data.weather[0].description,
       humidity: data.main.humidity,
-      pressure: data.main.pressure,
+      wind: data.wind.speed,
       error: ""
     });
    } else {
@@ -44,7 +44,7 @@ class Weather extends Component {
       temperature: undefined,
       description: undefined,
       humidity: undefined,
-      pressure: undefined,
+      wind: undefined,
       error: "Enter a city."
 
     });
@@ -60,7 +60,7 @@ class Weather extends Component {
             temperature={this.state.temperature}
             description={this.state.description}
             humidity={this.state.humidity}
-            pressure={this.state.pressure}
+            wind={this.state.wind}
             error={this.state.error}
            />
            

@@ -53,9 +53,9 @@ class Header extends Component {
               </li>
           </ul>  
         </nav>
-        <div className="dropdown" style = {{background:"",float:"right"}} >
-        <div className = "" onClick={this.showDropdownMenu}>
-          <img src={logo} alt="Settings" className="logo"/>
+        <div className="dropdown" style = {{background:""}} >
+        <div className = "button" onClick={this.showDropdownMenu}>
+          <img src={logo} alt="Settings" className="logo" style = {{float:"right"}}/>
           { this.state.displayMenu ? (
              <ul className="drop">
              <li><button>Dark/Light mode (soon)</button></li>

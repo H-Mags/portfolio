@@ -32,11 +32,44 @@ $white: white;
     text-decoration: none;   
 }
 
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+      @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+      @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+      @content;
+    }
+    @-o-keyframes #{$animation-name} {
+      @content;
+    }  
+    @keyframes #{$animation-name} {
+      @content;
+    }
+}
+  
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};      
+}
+  
+@include keyframes(slide-down) {
+    0% { opacity: 0; }
+    90% { opacity: 1; }
+}
+  
+
+
 a:-webkit-any-link {
     text-decoration: none;
     color: $black;
     border: none;
-  }
+}
 
 textarea:hover, 
 input:hover, 

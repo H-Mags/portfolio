@@ -4,7 +4,7 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-          Made by Me.
+          Made by Magdalena Hlohovska.
       </footer>
     );
   }

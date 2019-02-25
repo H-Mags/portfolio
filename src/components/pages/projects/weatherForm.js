@@ -7,7 +7,7 @@ class WeatherForm extends Component {
       return (
         <div className="weather">
            <h1>Weather App</h1>
-           <p>Enter your city to find out how's weather today.</p>
+           <p>Enter a city to find out how is weather today.</p>
            <div>
                 <form on onSubmit={this.props.getWeather}>
                     <input type="text" name="city" placeholder="City" className="formInput"/> 
@@ -18,28 +18,17 @@ class WeatherForm extends Component {
             {this.props.error && <p className="redtext">{this.props.error}</p>}
               <table className="table">
               <tr>
-                <td>{this.props.city && <p>Location: {this.props.city}</p>}</td>
-                <td>{this.props.temperature && <p>Temperature: {this.props.temperature} °C</p>}</td>
-                <td>{this.props.humidity && <p>Humidity: {this.props.humidity}%</p>}</td>
+                <td>{this.props.city && <div>Location: <p>{this.props.city}</p></div>}</td>
+                <td>{this.props.temperature && <div>Temperature:  <p>{this.props.temperature} °C</p></div>}</td>
+                <td>{this.props.humidity && <div>Humidity:  <p>{this.props.humidity}%</p></div>}</td>
               </tr>
               <tr>
-                <td>{this.props.country && <p>Country: {this.props.country}</p>}</td>
-                <td>{this.props.description && <p>Conditions: {this.props.description}</p>}</td>
-                <td>{this.props.wind && <p>Wind speed: {this.props.wind} m/s</p>}</td>
+                <td>{this.props.country && <div>Country:  <p>{this.props.country}</p></div>}</td>
+                <td>{this.props.description && <div>Conditions:  <p>{this.props.description}</p></div>}</td>
+                <td>{this.props.wind && <div>Wind speed:  <p>{this.props.wind} m/s</p></div>}</td>
               </tr>
               
-
-
-
-              
             </table>
-                {/* {this.props.city && <p>Location: {this.props.city}</p>}
-                {this.props.country && <p>Country: {this.props.country}</p>}
-                {this.props.temperature && <p>Temperature: {this.props.temperature} °C</p>}
-                {this.props.description && <p>Conditions: {this.props.description}</p>}
-                {this.props.humidity && <p>Humidity: {this.props.humidity}%</p>}
-                {this.props.wind && <p>Wind speed: {this.props.wind} m/s</p>}
-                {this.props.error && <p>{this.props.error}</p>} */}
 
             </div>        
         </div>

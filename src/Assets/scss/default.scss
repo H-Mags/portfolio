@@ -73,7 +73,7 @@ header {
             padding: 0;
             border: none;
             background: none;
-            background: rgb(240, 238, 238);
+            background: rgba(240, 238, 238, 0.288);
         }
     }
 
@@ -81,8 +81,6 @@ header {
         right: 20%;
         height: 25px;
         border-radius: 50%;
-        -webkit-transition: -webkit-transform 1.8s ease-in-out;
-                transition:         transform 1.8s ease-in-out;
         cursor: pointer;        
         
         &:hover {
@@ -97,6 +95,22 @@ header {
     width: 50%;
     border: 1.5px solid map-get($Colors, accent);
     border-radius: 5px;
+}
+
+.home {
+    margin-top: 2%;
+}
+
+.homeList {
+    list-style: none;
+    width: auto;
+    margin-left: 40%;
+    margin-right: 40%;
+    
+    li {
+        background: url(./check-mark2.png) left center no-repeat; 
+        padding-left: 20px; 
+    }
 }
 
 .formInput{
@@ -130,18 +144,30 @@ header {
     color: red;
 }
 
-table {
-    margin-top: 5%;
+.weather {
     width: 100%;
     text-align: center;
+}
 
-   td {
-    font-size: 18px;
-    text-align: center;
-    padding: 5px;
+.table {
+    width: 60%;   
+    margin: 20px auto; 
+    
+
+    p {
+        font-weight: bold;
+        font-size: 23px;
+        @include animation('slide-down 5s');
+    }
+
+    td {
+        font-size: 18px;
+        text-align: center;
+        padding: 5px;
     }
 }
 
 footer {
     text-align: center;
+    margin-top: 20px;
 }

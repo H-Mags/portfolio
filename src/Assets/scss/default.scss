@@ -11,7 +11,7 @@ header {
     .logo-settings {
         position: absolute;
         top: 70%; left: 90%;
-        @include translateY(-50%);
+        
     }
 
     nav, nav ul, nav ul li {
@@ -21,8 +21,10 @@ header {
 
     nav {
         position: absolute;
-        top: 70%; right: 45%;
-        @include translateY(-50%);
+        top: 70%;
+        width: 100%;
+        text-align: center;
+
 
         ul li {
             list-style-type: none;
@@ -51,20 +53,24 @@ header {
 
         ul {
             padding-left: 0;
-            background: rgb(240, 238, 238);
-            border: 2px solid #6EEB83;
+
+            
+            border-bottom: 2px solid rgb(94, 94, 94);
             border-radius: 5px;
             
         }
 
         li {
             list-style: none;
+            
         }
 
         li button{
+            width: 100%;
             padding: 0;
             border: none;
             background: none;
+            background: rgb(240, 238, 238);
         }
     }
 
@@ -84,4 +90,30 @@ header {
 
 }
 
+.formInput{
+    border: 1px solid $black;
+    border-radius: 5px;
+}
+
+
+.formButton {
+    padding: 1;
+    border: 2px solid map-get($Colors, accent);
+    border-radius: 5px;
+    margin-left: 10px;
+    background: none;
+
+    &:hover {
+        background-color: map-get($Colors, accent);
+        color: $white;
+        order: 2px solid $white;
+        border-radius: 5px;
+    }
+
+    &:active {
+    border: 2px solid map-get($Colors, accent);
+    border-radius: 5px;
+    background: none;
+    }
+}
 

@@ -1,6 +1,23 @@
 a:-webkit-any-link {
   text-decoration: none;
   color: black;
+  border: none;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
 }
 
 body {
@@ -47,8 +64,6 @@ header .logo-settings {
   position: absolute;
   top: 70%;
   left: 90%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 header nav, header nav ul, header nav ul li {
@@ -59,9 +74,8 @@ header nav, header nav ul, header nav ul li {
 header nav {
   position: absolute;
   top: 70%;
-  right: 45%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
 }
 
 header nav ul li {
@@ -88,8 +102,7 @@ header .dropdown {
 
 header .dropdown ul {
   padding-left: 0;
-  background: #f0eeee;
-  border: 2px solid #6EEB83;
+  border-bottom: 2px solid #5e5e5e;
   border-radius: 5px;
 }
 
@@ -98,9 +111,11 @@ header .dropdown li {
 }
 
 header .dropdown li button {
+  width: 100%;
   padding: 0;
   border: none;
   background: none;
+  background: #f0eeee;
 }
 
 header .logo {
@@ -116,5 +131,33 @@ header .logo {
 header .logo:hover {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
+}
+
+.formInput {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.formButton {
+  padding: 1;
+  border: 2px solid #BDF5C6;
+  border-radius: 5px;
+  margin-left: 10px;
+  background: none;
+}
+
+.formButton:hover {
+  background-color: #BDF5C6;
+  color: white;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2px solid white;
+          order: 2px solid white;
+  border-radius: 5px;
+}
+
+.formButton:active {
+  border: 2px solid #BDF5C6;
+  border-radius: 5px;
+  background: none;
 }
 /*# sourceMappingURL=default.css.map */

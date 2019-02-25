@@ -10,8 +10,8 @@ class WeatherForm extends Component {
            <p>Enter your city to find out how's weather today.</p>
            <div>
                 <form on onSubmit={this.props.getWeather}>
-                    <input type="text" name="city" placeholder="City" /> 
-                    <button>Get Weather</button>
+                    <input type="text" name="city" placeholder="City" className="formInput"/> 
+                    <button className="formButton">Get weather</button>
                 </form>
             </div>
             <div>

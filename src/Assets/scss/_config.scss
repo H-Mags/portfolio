@@ -35,7 +35,25 @@ $white: white;
 a:-webkit-any-link {
     text-decoration: none;
     color: $black;
+    border: none;
   }
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
 
 body {
     font-style: normal;

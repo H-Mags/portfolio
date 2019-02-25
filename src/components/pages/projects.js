@@ -10,6 +10,7 @@ class Projects extends Component {
         <div className = "container-fluid">
           <Weather />
           <div>
+          <hr></hr>
             More coming soon.
           </div>
         </div>

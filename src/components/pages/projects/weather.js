@@ -24,7 +24,7 @@ class Weather extends Component {
         error: 'City not found.'
       });
     } else if (city) {     
-    console.log(data);
+    //console.log(data);
     this.setState({
       city: data.name,
       country: data.sys.country,

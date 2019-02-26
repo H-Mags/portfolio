@@ -48,6 +48,7 @@ header {
     }
 
     .dropdown {
+        
 
         ul {
             padding-left: 0;
@@ -84,9 +85,11 @@ header {
         float: right;
         height: 25px;
         border-radius: 50%;
-        cursor: pointer;        
+        cursor: pointer;      
+        z-index: 2;  
         
         &:hover {
+            
             -webkit-transform: rotate(360deg);
                     transform: rotate(360deg);
           }        

@@ -48,23 +48,21 @@ header {
     }
 
     .dropdown {
-        
-        float: right;
-        top: 55%;
-        right: 20%;
-        
 
         ul {
             padding-left: 0;
-
-            
-            border-bottom: 2px solid rgb(94, 94, 94);
+            float: right;
+            margin: 40px 5px 0 0;
+            border: 2px solid rgb(12, 12, 12);
             border-radius: 5px;
-            
+            padding: 3px;
+            z-index: 2;
+            background: rgb(255, 255, 255);
         }
 
         li {
             list-style: none;
+            display: block;
             
         }
 
@@ -73,12 +71,17 @@ header {
             padding: 0;
             border: none;
             background: none;
-            background: rgba(240, 238, 238, 0.288);
+            cursor: pointer;
+
+            &:hover {
+                background: map-get($Colors, accent)
+            }
         }
     }
 
     .logo{
-        right: 20%;
+        margin: 50px 5% 0 0;
+        float: right;
         height: 25px;
         border-radius: 50%;
         cursor: pointer;        
@@ -95,25 +98,33 @@ header {
     width: 50%;
     border: 1.5px solid map-get($Colors, accent);
     border-radius: 5px;
+    min-width: 220px;
 }
 
 hr {
     width: 50%;
+    min-width: 220px;
+}
+
+.hrFooter {
+    width: 220px;
 }
 
 .home {
     margin-top: 2%;
 }
 
+
 .homeList {
     list-style: none;
-    width: auto;
-    margin-left: 40%;
-    margin-right: 40%;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
     
     li {
         background: url(./check-mark2.png) left center no-repeat; 
-        padding-left: 20px; 
+        padding-left: 20px;
+        width: 120px; 
     }
 }
 
@@ -128,6 +139,7 @@ hr {
     border: 2px solid map-get($Colors, accent);
     border-radius: 5px;
     margin-left: 10px;
+    margin-top: 5px;
     background: none;
 
     &:hover {
@@ -173,5 +185,5 @@ hr {
 
 footer {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 80px;
 }

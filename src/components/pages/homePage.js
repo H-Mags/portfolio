@@ -5,10 +5,11 @@ class homePage extends Component {
     return (
       <div className="container-fluid home">
         <p>Welcome to my portfolio website.</p>
-        <p>My name is Magdalena Hlohovska and I built this website with</p>
+        <p>My name is Magdalena Hlohovska and I built this website with</p><br></br>
         <ul className="homeList">
           <li>React.js</li>
           <li>SASS</li>
+          <li>Bootstrap 4</li>
           <li>Node.js</li>
           <li>Git</li>
         </ul>

@@ -4,7 +4,7 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        {/* <hr></hr> */}
+         <hr className="hrFooter"></hr>
           Made by Magdalena Hlohovska.
       </footer>
     );
